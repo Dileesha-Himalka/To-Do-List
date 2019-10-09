@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style> #TheForm {
+        margin-left: 396px;
+    }
+    #submitColor {
+        margin-left: 48px;
+        margin-top: 5px;
+    }</style>
+</head>
+<body>
+<form id="TheForm">
+    <input id="color" type="text" />
+    <br/>
+    <input id="submitColor" value="Submit" type="button" />
+</form>
+<span id="coltext">This text should have the same color as you put in the text box</span>
+<script>
+    function changeBackground() {
+        var color = document.getElementById("color").value; // cached
+
+        // The working function for changing background color.
+        document.bgColor = color;
+
+        // The code I'd like to use for changing the text simultaneously - however it does not work.
+        document.getElementById("coltext").style.color = color;
+    }
+
+    document.getElementById("submitColor").addEventListener("click", changeBackground, false);
+</script>
+</body>
+</html>

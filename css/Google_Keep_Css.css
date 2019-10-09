@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#171a1d;
+}
+
+.container{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+.txtb{
+    position: absolute;
+    left: 29%;
+    top: 40%;
+    width: 40%;
+    border: none;
+    border-bottom: 2px solid #000;
+    background: none;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h3{
+    color: white;
+    margin: 10px 0;
+}
+
+.task{
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    padding: 18px;
+    margin: 6px 0;
+    overflow: hidden;
+}
+
+.task i{
+    float: right;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.comp .task{
+    background: rgba(0,0,0,.5);
+    color: #fff;
+}
+.notcomp{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+.comp{
+    position: absolute;
+    top: 50%;
+    left:64% ;
+}
